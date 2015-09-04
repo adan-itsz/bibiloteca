@@ -24,7 +24,8 @@ namespace biblioteca
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-
+            RegistroLibros r = new RegistroLibros();
+            r.ShowDialog();
         }
     }
 }
