@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace biblioteca
 {
-    public partial class prestamos : Form
+    public partial class prestamosVencidos : Form
     {
-        public prestamos()
+        public prestamosVencidos()
         {
             InitializeComponent();
-        }
-
-        private void prestamos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

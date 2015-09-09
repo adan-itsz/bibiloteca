@@ -27,5 +27,12 @@ namespace biblioteca
             RegistroLibros r = new RegistroLibros();
             r.ShowDialog();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            Usuarios u = new Usuarios();
+            u.ShowDialog();
+            
+        }
     }
 }

@@ -95,5 +95,10 @@ namespace biblioteca
             button3.Enabled = true;
             button4.Enabled = true;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+        }
     }
 }

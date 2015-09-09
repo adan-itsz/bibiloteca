@@ -7,3 +7,14 @@ C:\Users\Administrador\Desktop\biblioteca\biblioteca\obj\Debug\biblioteca.Regist
 C:\Users\Administrador\Desktop\biblioteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.Cache
 C:\Users\Administrador\Desktop\biblioteca\biblioteca\obj\Debug\biblioteca.exe
 C:\Users\Administrador\Desktop\biblioteca\biblioteca\obj\Debug\biblioteca.pdb
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\bin\Debug\biblioteca.exe.config
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.exe
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.pdb
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\bin\Debug\biblioteca.exe
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\bin\Debug\biblioteca.pdb
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.Form1.resources
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.Properties.Resources.resources
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.RegistroLibros.resources
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.Usuarios.resources
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.Cache
