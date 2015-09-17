@@ -14,21 +14,13 @@ namespace biblioteca
 
     public partial class RegistroLibros : Form
     {
-        public struct Libros
-        {
-            public int isbn;
-            public string titulo;
-            public string autor;
-            public int existencias;
-
-        }
         public RegistroLibros()
         {
             InitializeComponent();
             
         }
         ArrayList rLibros = new ArrayList();
-        Libros infoLibros = new Libros();
+       estructuras.Libros infoLibros = new estructuras.Libros();
         int renglon;
         int bandera=0;
         

@@ -11,13 +11,7 @@ using System.Collections;
 
 namespace biblioteca
 {
-    public struct usuarios
-    {
-       public string usuario;
-       public string nombre;
-       public string direccion;
-       public int telefono;
-    }
+    
     public partial class Usuarios : Form
     {
         
@@ -44,29 +38,28 @@ namespace biblioteca
             dataGridView1.Columns.Add("", "Direccion");
             dataGridView1.Columns.Add("", "Telefono");
         }
+        estructuras.usuarios struc = new estructuras.usuarios();
         ArrayList users = new ArrayList();
-        usuarios usu = new usuarios();
         int ban = 0;
         int renglon;
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            usu.nombre = txtBoxNombre.Text;
-            usu.usuario = txtBoxUsuario.Text;
-            usu.direccion = txtBoxDireccion.Text;
-            usu.telefono = Convert.ToInt32(txtBoxTelefono.Text);
+            struc.nombre = txtBoxNombre.Text;
+            struc.usuario = txtBoxUsuario.Text;
+            struc.direccion = txtBoxDireccion.Text;
+            struc.telefono = Convert.ToInt32(txtBoxTelefono.Text);
             if (ban == 1)
             {
-                users.Add(usu);
-                dataGridView1.Rows.Add(usu.usuario, usu.nombre, usu.direccion, usu.telefono);
+                users.Add(struc);
+                dataGridView1.Rows.Add(struc.usuario, struc.nombre, struc.direccion, struc.telefono);
                 MessageBox.Show("Registro guardado correctamente", "Registro usuarios ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                dataGridView1[0, renglon].Value = usu.usuario;
-                dataGridView1[1, renglon].Value = usu.nombre;
-                dataGridView1[2, renglon].Value = usu.direccion;
-                dataGridView1[3, renglon].Value = usu.telefono;
+                dataGridView1[0, renglon].Value = struc.usuario;
+                dataGridView1[1, renglon].Value = struc.nombre;
+                dataGridView1[2, renglon].Value = struc.direccion;
+                dataGridView1[3, renglon].Value = struc.telefono;
             }
             txtBoxUsuario.Clear();
             txtBoxNombre.Clear();

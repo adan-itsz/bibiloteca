@@ -18,3 +18,4 @@ C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\bibli
 C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.RegistroLibros.resources
 C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.Usuarios.resources
 C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.Cache
+C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.prestamos.resources
