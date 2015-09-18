@@ -34,5 +34,11 @@ namespace biblioteca
             u.ShowDialog();
             
         }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            prestamos p = new prestamos();
+            p.ShowDialog();
+        }
     }
 }

@@ -37,7 +37,7 @@
             // 
             this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro.Location = new System.Drawing.Point(91, 84);
-            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(199, 34);
             this.btnRegistro.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarios.Location = new System.Drawing.Point(91, 146);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(199, 34);
             this.btnUsuarios.TabIndex = 1;
@@ -61,12 +61,13 @@
             // 
             this.btnPrestamos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrestamos.Location = new System.Drawing.Point(91, 225);
-            this.btnPrestamos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrestamos.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrestamos.Name = "btnPrestamos";
             this.btnPrestamos.Size = new System.Drawing.Size(199, 34);
             this.btnPrestamos.TabIndex = 2;
             this.btnPrestamos.Text = "Prestamos";
             this.btnPrestamos.UseVisualStyleBackColor = true;
+            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
             // Form1
             // 
@@ -76,7 +77,7 @@
             this.Controls.Add(this.btnPrestamos);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnRegistro);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

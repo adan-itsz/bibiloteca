@@ -39,7 +39,7 @@ namespace biblioteca
             dataGridView1.Columns.Add("", "Telefono");
         }
         estructuras.usuarios struc = new estructuras.usuarios();
-        ArrayList users = new ArrayList();
+         public ArrayList users = new ArrayList();
         int ban = 0;
         int renglon;
         private void btnGuardar_Click(object sender, EventArgs e)

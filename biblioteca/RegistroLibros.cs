@@ -19,7 +19,7 @@ namespace biblioteca
             InitializeComponent();
             
         }
-        ArrayList rLibros = new ArrayList();
+        public ArrayList rLibros = new ArrayList();
        estructuras.Libros infoLibros = new estructuras.Libros();
         int renglon;
         int bandera=0;

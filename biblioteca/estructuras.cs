@@ -23,5 +23,15 @@ namespace biblioteca
             public int existencias;
 
         }
+        public struct prestamos
+        {
+            public int idPrestamos;
+            public int IDUsuario;
+            public int ISBN;
+            //public string fechaPrestamo;
+            //public DateTime fechaEntrega;
+            public int cantidad;
+            public string status;
+        }
     }
 }
