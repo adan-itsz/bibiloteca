@@ -39,24 +39,24 @@ namespace biblioteca
             dataGridView1.Columns.Add("", "Telefono");
         }
         estructuras.usuarios struc = new estructuras.usuarios();
-         public ArrayList users = new ArrayList();
+         Dictionary<int, estructuras.usuarios> users = new Dictionary<int, estructuras.usuarios>();
         int ban = 0;
         int renglon;
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             struc.nombre = txtBoxNombre.Text;
-            struc.usuario = txtBoxUsuario.Text;
+            struc.idUsuario = Convert.ToInt32 (txtBoxUsuario.Text);
             struc.direccion = txtBoxDireccion.Text;
             struc.telefono = Convert.ToInt32(txtBoxTelefono.Text);
             if (ban == 1)
             {
-                users.Add(struc);
-                dataGridView1.Rows.Add(struc.usuario, struc.nombre, struc.direccion, struc.telefono);
+                users.Add(struc.idUsuario,struc);
+                dataGridView1.Rows.Add(struc.idUsuario, struc.nombre, struc.direccion, struc.telefono);
                 MessageBox.Show("Registro guardado correctamente", "Registro usuarios ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                dataGridView1[0, renglon].Value = struc.usuario;
+                dataGridView1[0, renglon].Value = struc.idUsuario;
                 dataGridView1[1, renglon].Value = struc.nombre;
                 dataGridView1[2, renglon].Value = struc.direccion;
                 dataGridView1[3, renglon].Value = struc.telefono;

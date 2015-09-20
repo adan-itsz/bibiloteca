@@ -17,16 +17,20 @@ namespace biblioteca
         {
             InitializeComponent();
         }
-        ArrayList usuarios = new ArrayList();
-        ArrayList libros = new ArrayList();
+        Dictionary<int, estructuras.usuarios> diccionarioInfoUsuarios = new Dictionary<int, estructuras.usuarios>();
+       // ArrayList libros = new ArrayList();
+        Dictionary<int, estructuras.Libros> diccionarioInfoLibros = new Dictionary<int, estructuras.Libros>();
         ArrayList prestamo = new ArrayList();
         Usuarios usrs = new Usuarios();
         RegistroLibros rl = new RegistroLibros();
         estructuras.prestamos estructura = new estructuras.prestamos();
+        estructuras.Libros libro = new estructuras.Libros();
+        estructuras.usuarios usua = new estructuras.usuarios();
         DateTime fechaPrestamo;
         DateTime fechaEntrega;
         int ban = 0;
         int idPrestamos = 000;
+        Dictionary<int, estructuras.prestamos> diccionarioLibros = new Dictionary<int, estructuras.prestamos>();
         
         
         //prestamos(ArrayList usuarios1, ArrayList libros1 )
@@ -38,7 +42,16 @@ namespace biblioteca
         public void tomarListas()
         {
             usuarios = usrs.users;
-            libros = rl.rLibros;
+            diccionarioInfoLibros = rl.diccionarioLibros;
+            estructura.status = "Prestado";
+            estructura.ISBN = 789789798;
+            diccionarioLibros.Add(estructura.ISBN, estructura);
+            if (diccionarioLibros.ContainsKey(estructura.ISBN))
+	{
+        diccionarioLibros[estructura.ISBN] = estructura;
+                
+	}
+            
         }
         public void GuardarDatos()
         {
@@ -50,9 +63,20 @@ namespace biblioteca
             fechaEntrega = dateTimePicker2.Value;
             fechaPrestamo = dateTimePicker1.Value;
             estructura.cantidad = Convert.ToInt32(txtCantidad.Text);
+            estructura.status = comboBox1.Text;
             prestamo.Add(estructura);
-            dataGridView1.Rows.Add(estructura.idPrestamos,estructura.IDUsuario, estructura.ISBN,fechaPrestamo, fechaEntrega,estructura.cantidad );
+            for (int i = 0; i < prestamo.Count; i++)
+            {
+                for (int j = 0; j < usuarios.Count; j++)
+                {
+
+                   
+                    dataGridView1.Rows.Add(estructura.idPrestamos, estructura.IDUsuario, estructura.ISBN, fechaPrestamo, fechaEntrega, estructura.cantidad, estructura.status);
             MessageBox.Show("prestamo guardado correctamente", "Prestamos actuales ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
+                
         }
 
         private void prestamos_Load(object sender, EventArgs e)
@@ -85,12 +109,10 @@ namespace biblioteca
         {
 
         }
-
         private void label8_Click(object sender, EventArgs e)
         {
 
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

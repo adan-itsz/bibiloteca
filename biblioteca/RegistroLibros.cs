@@ -19,7 +19,8 @@ namespace biblioteca
             InitializeComponent();
             
         }
-        public ArrayList rLibros = new ArrayList();
+        //public ArrayList rLibros = new ArrayList();
+         public Dictionary<int, estructuras.Libros> diccionarioLibros = new Dictionary<int, estructuras.Libros>();
        estructuras.Libros infoLibros = new estructuras.Libros();
         int renglon;
         int bandera=0;
@@ -44,7 +45,8 @@ namespace biblioteca
            
             if (bandera == 1)
             {
-                rLibros.Add(infoLibros);
+                //rLibros.Add(infoLibros);
+                diccionarioLibros.Add(infoLibros.isbn, infoLibros);
                 dataGridView1.Rows.Add(infoLibros.isbn, infoLibros.titulo, infoLibros.autor, infoLibros.existencias);
                 MessageBox.Show("Registro guardado correctamente", "Registro Libros ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

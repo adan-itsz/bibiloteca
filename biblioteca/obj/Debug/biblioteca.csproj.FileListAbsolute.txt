@@ -19,3 +19,15 @@ C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\bibli
 C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.Usuarios.resources
 C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.Cache
 C:\Users\adan\Documents\repositoriosVisual\bibiloteca\biblioteca\obj\Debug\biblioteca.prestamos.resources
+E:\bibiloteca\biblioteca\bin\Debug\biblioteca.exe.config
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.exe
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.pdb
+E:\bibiloteca\biblioteca\bin\Debug\biblioteca.exe
+E:\bibiloteca\biblioteca\bin\Debug\biblioteca.pdb
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.csprojResolveAssemblyReference.cache
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.Form1.resources
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.prestamos.resources
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.Properties.Resources.resources
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.RegistroLibros.resources
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.Usuarios.resources
+E:\bibiloteca\biblioteca\obj\Debug\biblioteca.csproj.GenerateResource.Cache

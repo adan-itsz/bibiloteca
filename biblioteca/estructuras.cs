@@ -10,7 +10,7 @@ namespace biblioteca
     {
         public struct usuarios
         {
-            public string usuario;
+            public int idUsuario;
             public string nombre;
             public string direccion;
             public int telefono;
